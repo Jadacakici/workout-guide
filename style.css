@@ -1,0 +1,78 @@
+/* Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f5e6; /* light green background */
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #2e8b57; /* deep green */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Navigation */
+nav {
+    background-color: #3cb371; /* medium green */
+    animation: slideIn 1s ease-in-out;
+}
+
+nav table {
+    margin: 0 auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #2e8b57;
+    transform: scale(1.05);
+}
+
+/* Main content */
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    animation: fadeInUp 1s ease-in;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
